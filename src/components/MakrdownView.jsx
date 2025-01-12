@@ -1,17 +1,28 @@
 import MarkdownPreview from "@uiw/react-markdown-preview";
+import { useReviewStore } from "../store/reviewStore";
 
 const MakrdownView = () => {
-  const source = `
-## MarkdownPreview
-
-> todo: React component preview markdown text.
-`;
+  const { markdownResponse, isLoading } = useReviewStore();
   return (
-    <div className="h-screen w-1/2 bg-white">
-      <MarkdownPreview
-        source={source}
-        style={{ padding: 20, height: "100vh" }}
-      />
+    <div className="h-screen w-1/2">
+      {isLoading ? (
+        <div className="flex justify-center flex-col items-center h-screen ">
+          <img
+            src="/src/assets/icons/arrow-path.svg"
+            className={`h-8 a ${isLoading ? "animate-spin" : ""}`}
+          ></img>
+          <strong>Generating</strong>
+        </div>
+      ) : (
+        <MarkdownPreview
+          source={markdownResponse}
+          style={{
+            padding: 20,
+            height: "100vh",
+            overflowY: "scroll",
+          }}
+        />
+      )}
     </div>
   );
 };

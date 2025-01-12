@@ -1,5 +1,5 @@
 {
-  "name": "error-fix",
+  "name": "cilent",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -13,8 +13,11 @@
     "@codemirror/lang-javascript": "^6.2.2",
     "@uiw/react-codemirror": "^4.23.7",
     "@uiw/react-markdown-preview": "^5.1.3",
+    "axios": "^1.7.9",
+    "dotenv": "^16.4.7",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "zustand": "^5.0.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",
