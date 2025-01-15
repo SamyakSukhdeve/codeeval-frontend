@@ -10,13 +10,17 @@ const Editor = () => {
   const handleSubmit = async () => {
     try {
       await getReview(userCode);
+      const element = document.getElementById("markdown");
+      element?.scrollIntoView({
+        behavior: "smooth",
+      });
     } catch (e) {
       toast.error(e.response.data.message);
     }
   };
 
   return (
-    <div className="h-screen w-1/2 relative">
+    <div className="h-svh md:w-1/2 relative">
       <button
         onClick={handleSubmit}
         disabled={isLoading ? true : false}
@@ -25,7 +29,7 @@ const Editor = () => {
         Analyze Code
       </button>
       <CodeMirror
-        height="100vh"
+        height="100svh"
         value={userCode}
         onChange={setUserCode}
         extensions={[javascript({ jsx: true })]}

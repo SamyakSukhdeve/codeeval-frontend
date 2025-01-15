@@ -22,14 +22,14 @@ const Landing = () => {
         </div>
         <Link
           to="/analyze"
-          className="p-2 text-white text-[14px] font-medium bg-slate-800 rounded hover:bg-slate-500"
+          className="p-2 text-white text-[14px] font-medium bg-slate-600 rounded hover:bg-slate-700"
         >
           Get Code Review
         </Link>
       </section>
 
       <div className="grid sm:grid-cols-2 md:grid-cols-2 md:mx-20 lg:mx-72">
-        <div className="px-7 py-4 m-2 rounded bg-[#1A3636]">
+        <div className="px-7 py-4 m-3 rounded bg-[#1A3636]">
           <pre>
             <code className="text-teal-500">{`// Paste your code here
 function example() {
@@ -37,7 +37,7 @@ function example() {
 }`}</code>
           </pre>
         </div>
-        <div className="px-7 py-4 m-2 flex gap-1 flex-col rounded bg-[#577B8D]">
+        <div className="px-7 py-4 m-3 flex gap-1 flex-col rounded bg-[#577B8D]">
           <div className="flex gap-2 items-center ">
             <img src="/src/assets/icons/bot.svg" className="h-6" />
             <div className="text-white">AI Suggestion:</div>

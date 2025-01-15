@@ -5,7 +5,7 @@ const MakrdownView = () => {
   const { markdownResponse, isLoading } = useReviewStore();
 
   return (
-    <div className="h-screen w-1/2">
+    <div className="h-svh md:w-1/2 w-screen" id="markdown">
       {isLoading ? (
         <div className="flex justify-center flex-col items-center h-screen ">
           <img
@@ -19,7 +19,7 @@ const MakrdownView = () => {
           source={markdownResponse}
           style={{
             padding: 20,
-            height: "100vh",
+            height: "100svh",
             overflowY: "scroll",
           }}
         />
