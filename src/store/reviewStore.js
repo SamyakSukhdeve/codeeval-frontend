@@ -4,16 +4,15 @@ import API from "../config/apiCilent";
 export const useReviewStore = create((set) => ({
   markdownResponse: ``,
   isLoading: false,
-  error: "",
 
   getReview: async (userCode) => {
     try {
-      set({ isLoading: true });
+      set({ isLoading: true, markdownResponse: "" });
       const response = await API.post("/review", { userCode });
       set({ markdownResponse: response.data, isLoading: false });
-    } catch (error) {
-      set({ error: error, isLoading: false });
-      console.log(error);
+    } catch (e) {
+      set({ isLoading: false });
+      throw e;
     }
   },
 }));

@@ -3,6 +3,7 @@ import { useReviewStore } from "../store/reviewStore";
 
 const MakrdownView = () => {
   const { markdownResponse, isLoading } = useReviewStore();
+
   return (
     <div className="h-screen w-1/2">
       {isLoading ? (
@@ -11,7 +12,7 @@ const MakrdownView = () => {
             src="/src/assets/icons/arrow-path.svg"
             className={`h-8 a ${isLoading ? "animate-spin" : ""}`}
           ></img>
-          <strong>Generating</strong>
+          <strong>Analyzing...</strong>
         </div>
       ) : (
         <MarkdownPreview
