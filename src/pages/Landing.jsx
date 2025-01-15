@@ -1,5 +1,9 @@
 import { Link } from "react-router-dom";
 import Header from "./Header";
+import bot from "../assets/icons/bot.svg";
+import doc from "../assets/icons/doc.svg";
+import glass from "../assets/icons/glass.svg";
+import sparkel from "../assets/icons/sparkel.svg";
 
 const Landing = () => {
   return (
@@ -39,22 +43,22 @@ function example() {
         </div>
         <div className="px-7 py-4 m-3 flex gap-1 flex-col rounded bg-[#577B8D]">
           <div className="flex gap-2 items-center ">
-            <img src="/src/assets/icons/bot.svg" className="h-6" />
+            <img src={bot} className="h-6" />
             <div className="text-white">AI Suggestion:</div>
           </div>
           <div className="">
             <div className="flex gap-2 items-center ">
-              <img src="/src/assets/icons/sparkel.svg" className="h-5" />
+              <img src={sparkel} className="h-5" />
               <div className="text-white">Consider adding type checking</div>
             </div>
             <div className="flex gap-2 items-center ">
-              <img src="/src/assets/icons/glass.svg" className="h-5" />
+              <img src={glass} className="h-5" />
               <div className="text-white">
                 Add error handling for undefined data
               </div>
             </div>
             <div className="flex gap-2 items-center ">
-              <img src="/src/assets/icons/doc.svg" className="h-5" />
+              <img src={doc} className="h-5" />
               <div className="text-white">Document function parameters</div>
             </div>
           </div>

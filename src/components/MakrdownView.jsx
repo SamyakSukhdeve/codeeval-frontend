@@ -1,6 +1,8 @@
 import MarkdownPreview from "@uiw/react-markdown-preview";
 import { useReviewStore } from "../store/reviewStore";
 
+import arrow from "../assets/icons/arrow.svg";
+
 const MakrdownView = () => {
   const { markdownResponse, isLoading } = useReviewStore();
 
@@ -9,7 +11,7 @@ const MakrdownView = () => {
       {isLoading ? (
         <div className="flex justify-center flex-col items-center h-screen ">
           <img
-            src="/src/assets/icons/arrow-path.svg"
+            src={arrow}
             className={`h-8 a ${isLoading ? "animate-spin" : ""}`}
           ></img>
           <strong>Analyzing...</strong>
