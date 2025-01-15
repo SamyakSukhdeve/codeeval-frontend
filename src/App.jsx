@@ -3,7 +3,7 @@ import MakrdownView from "./components/MakrdownView";
 
 function App() {
   return (
-    <div className="min-h-svh w-screen md:flex md:justify-center md:items-center relative overflow-hidden grid grid-row-2">
+    <div className="min-h-svh w-screen md:flex md:justify-center md:items-center relative grid grid-row-2">
       <Editor />
       <MakrdownView />
     </div>

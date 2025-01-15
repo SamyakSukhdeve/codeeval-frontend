@@ -41,25 +41,28 @@ function example() {
 }`}</code>
           </pre>
         </div>
-        <div className="px-7 py-4 m-3 flex gap-1 flex-col rounded bg-[#577B8D]">
+        <div className="px-7 py-4 m-3 flex gap-1 flex-col rounded font-normal bg-[#1c5572]">
           <div className="flex gap-2 items-center ">
-            <img src={bot} className="h-6" />
-            <div className="text-white">AI Suggestion:</div>
+            <div className="text-yellow-200">AI Suggestion:</div>
           </div>
           <div className="">
             <div className="flex gap-2 items-center ">
               <img src={sparkel} className="h-5" />
-              <div className="text-white">Consider adding type checking</div>
+              <div className="text-yellow-200">
+                Consider adding type checking
+              </div>
             </div>
             <div className="flex gap-2 items-center ">
               <img src={glass} className="h-5" />
-              <div className="text-white">
+              <div className="text-yellow-200">
                 Add error handling for undefined data
               </div>
             </div>
             <div className="flex gap-2 items-center ">
               <img src={doc} className="h-5" />
-              <div className="text-white">Document function parameters</div>
+              <div className="text-yellow-200">
+                Document function parameters...
+              </div>
             </div>
           </div>
         </div>

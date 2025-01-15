@@ -15,18 +15,18 @@ const Editor = () => {
         behavior: "smooth",
       });
     } catch (e) {
-      toast.error(e.response.data.message);
+      toast.error(e.response.data?.message);
     }
   };
 
   return (
-    <div className="h-svh md:w-1/2 relative">
+    <div className="h-svh md:w-1/2 relative overflow-scroll">
       <button
         onClick={handleSubmit}
         disabled={isLoading ? true : false}
         className="w-max bottom-6 right-6 absolute bg-[#77B254]  hover:bg-[#5B913B] text-white font-medium  rounded z-10 p-[7px] active:translate-y-1 disabled:pointer-events-none disabled:cursor-not-allowed"
       >
-        Analyze Code
+        {isLoading ? "Analyzing..." : "Analyze Code"}
       </button>
       <CodeMirror
         height="100svh"
