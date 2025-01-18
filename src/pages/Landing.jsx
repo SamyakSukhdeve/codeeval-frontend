@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import Header from "./Header";
-import bot from "../assets/icons/bot.svg";
 import doc from "../assets/icons/doc.svg";
 import glass from "../assets/icons/glass.svg";
 import sparkel from "../assets/icons/sparkel.svg";
