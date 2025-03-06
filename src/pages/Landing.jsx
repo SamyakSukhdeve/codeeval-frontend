@@ -8,7 +8,7 @@ const Landing = () => {
   return (
     <div className="min-h-svh flex flex-col">
       <Header />
-      <section className="flex flex-col justify-center items-center py-10 text-center">
+      <section className="flex flex-col grow justify-center items-center py-10 text-center">
         <div className="container mx-auto max-w-3xl">
           <div className="text-2xl sm:text-4xl md:text-6xl px-2 font-bold mb-6">
             Elevate Your Code with{" "}
@@ -31,7 +31,7 @@ const Landing = () => {
         </Link>
       </section>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-2 md:mx-20 lg:mx-72">
+      <div className="grid sm:grid-cols-2 mb-14  md:grid-cols-2 md:mx-20 lg:mx-72">
         <div className="px-7 py-4 m-3 rounded bg-[#1A3636]">
           <pre>
             <code className="text-teal-500">{`// Paste your code here
@@ -67,7 +67,7 @@ function example() {
         </div>
       </div>
 
-      <footer className="flex justify-center items-center absolute inset-x-0 bottom-2">
+      <footer className="flex justify-center items-center  inset-x-0 bottom-2">
         <div>
           Made by{" "}
           <Link

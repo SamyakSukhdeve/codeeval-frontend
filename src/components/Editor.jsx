@@ -15,7 +15,7 @@ const Editor = () => {
         behavior: "smooth",
       });
     } catch (e) {
-      toast.error(e.response.data?.message);
+      toast.error(e.response?.data.message);
     }
   };
 
