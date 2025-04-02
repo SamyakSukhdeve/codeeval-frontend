@@ -24,7 +24,7 @@ const Editor = () => {
       <button
         onClick={handleSubmit}
         disabled={isLoading ? true : false}
-        className="w-max bottom-6 right-6 absolute bg-[#77B254]  hover:bg-[#5B913B] text-white font-medium  rounded z-10 p-[7px] active:translate-y-1 disabled:pointer-events-none disabled:cursor-not-allowed"
+        className="w-max bottom-6 right-6 absolute  text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-[14px]  rounded z-10 p-[7px] active:translate-y-1 disabled:pointer-events-none disabled:cursor-not-allowed"
       >
         {isLoading ? "Analyzing..." : "Analyze Code"}
       </button>
