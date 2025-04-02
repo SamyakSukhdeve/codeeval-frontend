@@ -31,6 +31,7 @@ const Editor = () => {
       <CodeMirror
         height="100svh"
         value={userCode}
+        placeholder={`//Past your code here.`}
         onChange={setUserCode}
         extensions={[javascript({ jsx: true })]}
         theme="dark"
